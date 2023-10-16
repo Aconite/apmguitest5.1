@@ -1,0 +1,17 @@
+**/target/
+**/target/**
+**/*.classpath
+**/*.iml
+**/*.project
+**/*.settings
+**/.idea/**
+**/.idea/
+**/web.config
+acceptance-tests/gradle.properties
+**/dependency-reduced-pom.xml
+**/dependency-check-report.html
+**/cucumber-html-report.html
+release.properties
+buildNumber.properties
+**/.mvn/
+**/.mvn/**
