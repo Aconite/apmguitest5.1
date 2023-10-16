@@ -1,0 +1,1 @@
+{"tokenProduct":"TestBank Ruby","appSequenceNumber":"1","name":"TestBank Ruby","pukRequired":"false","pinLength":"4","pukLength":"4","validityInDays":"3","importEncryptionZone":"TestBank Institution","exportEncryptionZone":"TestBank Export","pinVerificationMethod":"VISA PIN Verification Value (PVV)","pinVerificationKey":"TestBank PVK 1","importGeneratePuk":"Generate"}

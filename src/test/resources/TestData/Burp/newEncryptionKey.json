@@ -1,0 +1,3 @@
+{"status":"Active","keyType":"Zone PIN Key","name":"Burp Zone Key","hsmType":"Thales payShield (keyblock)",
+"mkCheckValue":"9D04A0","keyAlgorithm":"DES2EDE","blockSize":"64",
+"keyValue": "S10096P0TB00S000293DE77961C767351A7D0CE66DBB9C3484F6546E40709CC77463264E87BCFAFABC5DB4852D4335374"}

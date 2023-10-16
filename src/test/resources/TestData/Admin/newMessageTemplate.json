@@ -1,0 +1,5 @@
+{"parentInstitution":"TestBank","name":"TestBank Message Template ","institutionName": "TestBank","Pan": "false",
+  "panSequence": "false","expiryDate": "false","panAlias": "false","panId": "false","pinPukFlag": "false",
+  "pinBlock": "false","pukBlock": "false","pinVerificationValue": "false","pukVerificationValue": "false",
+  "customerCode": "false","operation": "false","tokenProductName": "false","appSequenceNumber": "false","fixedData": ""}
+

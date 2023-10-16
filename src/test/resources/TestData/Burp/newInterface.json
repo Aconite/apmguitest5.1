@@ -1,0 +1,1 @@
+{"name":"BurpBank","type":"PIN Delivery web-services interface","institution":"TestBank","encryptionZone":"ABC Institution","host":"testbank.main.com","port":"8443","timeout":"300","SSL":"true"}

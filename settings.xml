@@ -1,0 +1,68 @@
+<settings>
+    <mirrors>
+        <mirror>
+            <!--This sends everything else to /public -->
+            <id>nexus</id>
+            <mirrorOf>central</mirrorOf>
+            <url>http://silvernob/repository/maven-public</url>
+        </mirror>
+    </mirrors>
+    <profiles>
+        <profile>
+            <id>default-repositories</id>
+            
+            <properties>
+                <internal.releases.url>http://silvernob/repository/maven-releases/</internal.releases.url>
+            </properties>
+
+            <repositories>
+                <!-- Override central with a bogus URL - part of nexus proxy config -->
+                <repository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
+
+                <!-- Internal snapshot/release repositories -->
+                <repository>
+                    <id>releases</id>
+                    <name>Internal Releases</name>
+                    <url>http://silvernob/repository/maven-releases/</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </repository>
+            </repositories>
+            
+            <pluginRepositories>
+                <!-- Override central with a bogus URL - part of nexus proxy config -->
+                <pluginRepository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases><enabled>true</enabled></releases>
+                    <snapshots><enabled>false</enabled></snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>default-repositories</activeProfile>
+    </activeProfiles>
+    
+    <servers>
+        <!-- Credentials for nexus internal release/snapshot repo server -->
+        <server>
+            <id>internal-releases</id>
+            <username>admin</username>
+            <password>nAdm33n18#</password>
+        </server>
+        <!-- Server/username for sitedocs upload server -->
+        <server>
+            <id>sitedocs</id>
+            <username>nexus</username>
+        </server>
+    </servers>
+
+
+</settings>
